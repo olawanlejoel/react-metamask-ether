@@ -1,13 +1,80 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	background: rgba(255, 255, 255, 0.168);
+	padding: 30px 100px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.card-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.info {
+	color: #61dafb;
+	font-size: 20px;
+}
+
+.btn {
+	background-color: #61dafb;
+	padding: 20px 40px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background-color: #61dafbc1;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
